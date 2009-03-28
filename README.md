@@ -1,8 +1,6 @@
  
 # BPM2
 
-## OVERVIEW
- 
 _Bpm2_ is lisp-embedded pattern-matching language. it was originally designed for
   doing code transformation
  
@@ -46,7 +44,7 @@ argument and plugs it into the `Thing In Question` parameter of the related clau
 
 So:
  
-    (/int) ~ (lambda (x) (//int x))
+   `(/int)` ~ `(lambda (x) (//int x))`
  
 Thus
  
@@ -123,7 +121,7 @@ interpreted as a pattern literal
  
 A pattern literal is a pattern that looks like what it should match.
  
-So
+So:
  
     CL-USER> (/and (a b c))
     -> #<function ..>
@@ -199,10 +197,10 @@ the Thing In Question against the pattern then tries the lisp forms like `//LISP
  
 There are 4 primitive functors
  
-* AND
-* LISP
-* LISPP
-* OR
+* `AND`
+* `LISP`
+* `LISPP`
+* `OR`
  
 All other patterns and clauses are defined with `DEF-BPM2-MACRO`. `DEF-BPM2-MACRO`
 behaves exactly like `DEFMACRO` except there is some magic that goes on behind the
